@@ -1,0 +1,79 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Certainty Question{% endblock %}
+
+{% block content %}
+
+
+<div><span style="color: rgb(0, 0, 0); font-size: medium;">Please answer the following question using the slider:&nbsp;</span><div>&nbsp;</div
+
+<div><strong>How certain are you of your answer to the prior question?</strong>
+
+
+<div>&nbsp;</div>
+
+<div>&nbsp;</div>
+</div>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+    <div style="float: left">Not at all certain</div>
+    <div style="float: right">Completely certain</div>
+  <input type="range" min="1" max="100" value="50" class="slider" name="certainty3">
+</div>
+
+
+
+Click next once you have answered
+<div>&nbsp;</div>
+</body>
+</html>
+
+
+{% next_button %}
+
+<div>&nbsp;</div>
+If at any point you have a question, raise your hand by clicking on the icon labeled "Participants" at the bottom center of your Zoom screen. Then, click the button labeled "Raise Hand." 
+<div>&nbsp;</div>
+
+{% endblock %}
