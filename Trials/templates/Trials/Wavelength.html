@@ -1,0 +1,24 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}Wavelength Question {% endblock %}
+
+{% block content %}
+
+
+<strong>I think that my partner and I are on the same wavelength with regard to our judgments of the video.&nbsp;</strong>
+<div>&nbsp;</div>
+
+{% formfield player.PartnerAgreement %}
+
+
+
+Click next once you have answered to reveal the judgement question.
+
+{% next_button %}
+
+<div>&nbsp;</div>
+If at any point you have a question, raise your hand by clicking on the icon labeled "Participants" at the bottom center of your Zoom screen. Then, click the button labeled "Raise Hand." 
+<div>&nbsp;</div>
+
+{% endblock %}
