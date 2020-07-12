@@ -2,57 +2,116 @@
 from otree.api import Currency as c, currency_range
 from ._builtin import Page, WaitPage
 from .models import Constants
+import random, os
+
+class Stimuli(Page):
+    form_model = 'player'
+    def vars_for_template(self):
+            return self.player.vars_for_template()
+
+class Judgement_1(Page):
+    form_model = 'player'
+    form_fields = ['judgement1']
+    def vars_for_template(self):
+            return self.player.vars_for_template()
 
 
-class SRG(Page):
+class Certainty_1(Page):
     form_model = 'player'
-    form_fields = ['SRG_1', 'SRG_2', 'SRG_3', 'SRG_4', 'SRG_5', 'SRG_6', 'SRG_7', 'SRG_8']
-class CO_CON(Page):
+    form_fields = ['certainty1']
+
+class MyWaitPage_2(WaitPage):
+
+    pass
+class Discussion_1(Page):
     form_model = 'player'
-    form_fields = ['CO_CON_1', 'CO_CON_2', 'CO_CON_3', 'CO_CON_4', 'CO_CON_5']
-class SRT(Page):
+    live_method = "live_slider"
+    def vars_for_template(self):
+            return self.player.vars_for_template()
+
+
+
+class Wavelength(Page):
+    form_model = 'player'
+    form_fields = ['PartnerAgreement']
+
+
+class Judgement_2(Page):
+    form_model = 'player'
+    form_fields = ['judgement2']
+    def vars_for_template(self):
+            return self.player.vars_for_template()
+
+
+class Certainty_2(Page):
+    form_model = 'player'
+    form_fields = ['certainty2']
+
+class MyWaitPage_3(WaitPage):
+    pass
+
+class Stimuli_Rewatch(Page):
+    form_model = 'player'
+    def vars_for_template(self):
+            return self.player.vars_for_template()
+
+class Judgement_3(Page):
+    form_model = 'player'
+    form_fields = ['judgement3']
+    def vars_for_template(self):
+            return self.player.vars_for_template()
+
+class Certainty_3(Page):
+    form_model = 'player'
+    form_fields = ['certainty3']
+
+class MyWaitPage_4(WaitPage):
+    pass
+
+
+
+## SHARED REALITY QUESTIONS
+class IOS(Page):
     def is_displayed(self):
-        return self.round_number == 2
-    form_model = 'player'
-    form_fields = ['SRT_1', 'SRT_2', 'SRT_3', 'SRT_4', 'SRT_5']
-class IOS(Page):
+        return self.round_number == 3 or self.round_number == 6
     form_model = 'player'
     form_fields = ['IOS_1']
+    def vars_for_template(self):
+            return self.player.vars_for_template()
 
-class IOS(Page):
+class P_QUESTIONS_0(Page):
+    def is_displayed(self):
+       return self.round_number == 3 or self.round_number == 6 # Page will show on round 3 and 6 only
     form_model = 'player'
-    form_fields = ['IOS_1']
 
-class epist(Page):
+class P_QUESTIONS_1(Page):
+    def is_displayed(self):
+        return self.round_number == 3 or self.round_number == 6
     form_model = 'player'
-    form_fields = ['Epist_1', 'Epist_2', 'Epist_3']
+    form_fields = ['PQ_1', 'PQ_2', 'PQ_3', 'PQ_4']
 
-class click(Page):
+
+class P_QUESTIONS_2(Page):
+    def is_displayed(self):
+        return self.round_number == 3 or self.round_number == 6
     form_model = 'player'
-    form_fields = ['Click']
+    form_fields = ['PQ_5', 'PQ_6', 'PQ_7', 'PQ_8', 'PQ_9', 'PQ_10']
 
-class relate(Page):
-    form_model = 'player'
-    form_fields = ['rel_1', 'rel_2', 'rel_3', 'rel_4', 'rel_5', 'rel_6', 'rel_7', 'rel_8']
+class MyWaitPage_5(WaitPage):
+    def is_displayed(self):
+        return self.round_number == 3 or self.round_number == 6
 
-class resp(Page):
-    form_model = 'player'
-    form_fields = ['resp_1', 'resp_2', 'resp_3']
+page_sequence = [Stimuli, Judgement_1, Certainty_1, MyWaitPage_2, Discussion_1, Wavelength, Judgement_2, Certainty_2, MyWaitPage_3, Stimuli_Rewatch, Judgement_3, Certainty_3, MyWaitPage_4, P_QUESTIONS_0, P_QUESTIONS_1, IOS, P_QUESTIONS_2, MyWaitPage_5]
+#page_sequence = [Stimuli, P_QUESTIONS_0, P_QUESTIONS_4]
+#page_sequence = [P_QUESTIONS_0, IOS, P_QUESTIONS_1, P_QUESTIONS_2]
 
-class sim(Page):
-    form_model = 'player'
-    form_fields = ['sim_1', 'sim_2', 'sim_3', 'sim_4', 'sim_5']
 
-class rap(Page):
-    form_model = 'player'
-    form_fields = ['rap_1', 'rap_2', 'rap_3', 'rap_4', 'rap_5', 'rap_6', 'rap_7', 'rap_8', 'rap_9', 'rap_10']
 
-class cert(Page):
-    form_model = 'player'
-    form_fields = ['cert_1', 'cert_2', 'cert_3']
 
-class open(Page):
-    form_model = 'player'
-    form_fields = ['open_1', 'open_2', 'reflect']
 
-page_sequence = [cert, sim, click, SRG, CO_CON, IOS, epist, relate, resp, rap, open,]
+
+
+
+
+
+
