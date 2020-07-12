@@ -1,0 +1,75 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %} Click to reveal a question {% endblock %}
+
+{% block content %}
+
+<BR><br>
+<script type="text/javascript">
+            window.onload= function() {
+                var divs= document.getElementsByTagName('div');
+                for (var i= divs.length; i-->0;)
+                    if (divs[i].className==='question')
+                        Toggler(divs[i]);
+            };
+
+            function Toggler(div) {
+                var state= false;
+                var toggled= div.nextSibling;
+                while (toggled.nodeType!==1)
+                    toggled= toggled.nextSibling;
+
+                div.onclick= function() {
+                    state= !state;
+                    toggled.style.display= state? 'block' : 'none';
+                };
+            };
+
+        </script>
+        <style>
+            div.flashcard {
+                margin: 0 10px 10px 0;
+            }
+            div.flashcard div.question {
+                background-color:#ddd;
+                width: 400px;
+                padding: 5px;
+                cursor: hand;
+                cursor: pointer;
+            }
+            div.flashcard div.answer {
+                background-color:#eee;
+                width: 400px;
+                padding: 5px;
+                display: none;
+            }
+        </style>
+    </head>
+<body>
+
+    <div id="1" class="flashcard">
+        <div  class="question"><b>Question 1</b></div>
+    <div class="answer">If you could wake up tomorrow having gained any one quality or ability, what would it be?</div>
+    </div>
+
+    <div id="2" class="flashcard">
+    <div class="question"><b>Question 2</b></div>
+    <div class="answer">If a crystal ball could tell you the truth about yourself, your life, the future or anything else, what would you want to know?</div>
+    </div>
+
+    <div id="3" class="flashcard">
+    <div class="question"><b>Question 3</b></div>
+    <div class="answer">Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?</div>
+    </div>
+
+    <div id="4" class="flashcard">
+    <div class="question"><b>Question 4</b></div>
+    <div class="answer">Describe an embarrassing moment in your life.</div>
+    </div>
+</body>
+
+<div>&nbsp;</div>
+{% next_button %}
+
+{% endblock %}
