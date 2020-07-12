@@ -11,7 +11,7 @@ class Constants(BaseConstants):
     name_in_url = 'Judgment_experiment'
     players_per_group = 2
 
-    # find all images (this should also include videos!)
+    # find all images and videos
     image_path = os.path.join('_static/my_folder/')
     images = os.listdir(image_path)  # this generates a list of filenames
     images = ["my_folder/" + x for x in images] # gives correct relative path to filenames
