@@ -1,0 +1,49 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %} {% endblock %}
+{% block content %}
+
+<div><b>Please rate your agreement with the following statements.</b></div>
+
+<BR><br>
+
+        <div><b>One can rely on my partner's impressions of the videos.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=Epist_1 VALUE=1>
+<INPUT TYPE=radio NAME=Epist_1 VALUE=2>
+<INPUT TYPE=radio NAME=Epist_1 VALUE=3>
+<INPUT TYPE=radio NAME=Epist_1 VALUE=4>
+<INPUT TYPE=radio NAME=Epist_1 VALUE=5>
+<INPUT TYPE=radio NAME=Epist_1 VALUE=6>
+<INPUT TYPE=radio NAME=Epist_1 VALUE=7>
+strongly agree<BR><br>
+
+      <div><b>My partner is a credible source of information with regard to the videos.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=Epist_2 VALUE=1>
+<INPUT TYPE=radio NAME=Epist_2 VALUE=2>
+<INPUT TYPE=radio NAME=Epist_2 VALUE=3>
+<INPUT TYPE=radio NAME=Epist_2 VALUE=4>
+<INPUT TYPE=radio NAME=Epist_2 VALUE=5>
+<INPUT TYPE=radio NAME=Epist_2 VALUE=6>
+<INPUT TYPE=radio NAME=Epist_2 VALUE=7>
+strongly agree<BR><br>
+
+      <div><b>My partner is a person whose judgment about the videos one can trust.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=Epist_3 VALUE=1>
+<INPUT TYPE=radio NAME=Epist_3 VALUE=2>
+<INPUT TYPE=radio NAME=Epist_3 VALUE=3>
+<INPUT TYPE=radio NAME=Epist_3 VALUE=4>
+<INPUT TYPE=radio NAME=Epist_3 VALUE=5>
+<INPUT TYPE=radio NAME=Epist_3 VALUE=6>
+<INPUT TYPE=radio NAME=Epist_3 VALUE=7>
+strongly agree<BR><br>
+
+
+
+Please click next here once you have completed the questions above.
+{% next_button %}
+
+{% endblock %}
