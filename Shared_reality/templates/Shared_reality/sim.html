@@ -1,0 +1,70 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %} {% endblock %}
+{% block content %}
+
+<div><b>My partner and I seemed to...</b></div>
+
+<BR><br>
+
+        <div><b>...be very similar people.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=sim_1 VALUE=1>
+<INPUT TYPE=radio NAME=sim_1 VALUE=2>
+<INPUT TYPE=radio NAME=sim_1 VALUE=3>
+<INPUT TYPE=radio NAME=sim_1 VALUE=4>
+<INPUT TYPE=radio NAME=sim_1 VALUE=5>
+<INPUT TYPE=radio NAME=sim_1 VALUE=6>
+<INPUT TYPE=radio NAME=sim_1 VALUE=7>
+strongly agree<BR><br>
+
+      <div><b>...be very much alike.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=sim_2 VALUE=1>
+<INPUT TYPE=radio NAME=sim_2 VALUE=2>
+<INPUT TYPE=radio NAME=sim_2 VALUE=3>
+<INPUT TYPE=radio NAME=sim_2 VALUE=4>
+<INPUT TYPE=radio NAME=sim_2 VALUE=5>
+<INPUT TYPE=radio NAME=sim_2 VALUE=6>
+<INPUT TYPE=radio NAME=sim_2 VALUE=7>
+strongly agree<BR><br>
+
+      <div><b>...be the same type of person.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=sim_3 VALUE=1>
+<INPUT TYPE=radio NAME=sim_3 VALUE=2>
+<INPUT TYPE=radio NAME=sim_3 VALUE=3>
+<INPUT TYPE=radio NAME=sim_3 VALUE=4>
+<INPUT TYPE=radio NAME=sim_3 VALUE=5>
+<INPUT TYPE=radio NAME=sim_3 VALUE=6>
+<INPUT TYPE=radio NAME=sim_3 VALUE=7>
+strongly agree<BR><br>
+
+          <div><b>...have a lot of characteristics in common.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=sim_4 VALUE=1>
+<INPUT TYPE=radio NAME=sim_4 VALUE=2>
+<INPUT TYPE=radio NAME=sim_4 VALUE=3>
+<INPUT TYPE=radio NAME=sim_4 VALUE=4>
+<INPUT TYPE=radio NAME=sim_4 VALUE=5>
+<INPUT TYPE=radio NAME=sim_4 VALUE=6>
+<INPUT TYPE=radio NAME=sim_4 VALUE=7>
+strongly agree<BR><br>
+
+          <div><b>...have similar personalities.</b></div>
+    strongly disagree
+<INPUT TYPE=radio NAME=sim_5 VALUE=1>
+<INPUT TYPE=radio NAME=sim_5 VALUE=2>
+<INPUT TYPE=radio NAME=sim_5 VALUE=3>
+<INPUT TYPE=radio NAME=sim_5 VALUE=4>
+<INPUT TYPE=radio NAME=sim_5 VALUE=5>
+<INPUT TYPE=radio NAME=sim_5 VALUE=6>
+<INPUT TYPE=radio NAME=sim_5 VALUE=7>
+strongly agree<BR><br>
+
+
+Please click next here once you have completed the questions above.
+{% next_button %}
+
+{% endblock %}
