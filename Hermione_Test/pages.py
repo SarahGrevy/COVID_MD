@@ -38,4 +38,6 @@ class Certainty_3(Page):
     form_fields = ['certainty3']
 class MyWaitPage_3(WaitPage):
     pass
-page_sequence = [Stimuli, Judgement1, Certainty_1, MyWaitPage_1, Discussion_1, Wavelength, Judgement_2, Certainty_2, MyWaitPage_2, Stimuli_Rewatch, Judgement_3, Certainty_3, MyWaitPage_3]
+class End(Page):
+    form_model = 'player'
+page_sequence = [Stimuli, Judgement1, Certainty_1, MyWaitPage_1, Discussion_1, Wavelength, Judgement_2, Certainty_2, MyWaitPage_2, Stimuli_Rewatch, Judgement_3, Certainty_3, MyWaitPage_3, End]
