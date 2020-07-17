@@ -9,6 +9,8 @@ class Welcome(Page):
     form_model = 'player'
 class Zoom(Page):
     form_model = 'player'
+class Screen_setting(Page):
+    form_model = 'player'    
 class Icebreaker(Page):
     form_model = 'player'
 class MyWaitPage_1(WaitPage):
