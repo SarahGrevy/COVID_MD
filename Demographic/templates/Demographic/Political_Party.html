@@ -53,25 +53,22 @@ Overall, on the following scale of political orientation, where would you place 
   cursor: pointer;
 }
 </style>
+
 </head>
 <body>
 
-<style> 
-        .tab { 
-            display: inline-block; 
-            margin-left: 780px; 
-        } 
-    </style> 
 
-  <label for="vol">Democrat <span class="tab"></span> Republican</label>
+    <div style="float: left">Democrat</div>
+    <div style="float: right">Republican</div>
   <input type="range" min="1" max="100" value="50" class="slider" name="PoliticalParty">
-     <div>&nbsp;</div>
+
 </body>
 </html>
 <div>&nbsp;</div>
+
 {% next_button %}
 
-<div>&nbsp;</div>
+
 <html>
 
 {% endblock %}
