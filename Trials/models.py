@@ -58,7 +58,7 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     Name = models.StringField(label='What is your name?')
     Age = models.IntegerField(label='What is your age?')
-    PartnerAgreement = models.StringField(choices=[['Strongly disagree', 'Strongly disagree'], ['Disagree', 'Disagree'], ['Somewhat disagree', 'Somewhat disagree'], ['Neither agree nor disagree', 'Neither agree nor disagree'], ['Somewhat agree', 'Somewhat agree'], ['Agree', 'Agree']], label='I think that my partner and I are on the same wavelength with regard to our judgments of the video', widget=widgets.RadioSelectHorizontal)
+    PartnerAgreement = models.StringField(choices=[['Strongly disagree', 'Strongly disagree'], ['Disagree', 'Disagree'], ['Somewhat disagree', 'Somewhat disagree'], ['Neither agree nor disagree', 'Neither agree nor disagree'], ['Somewhat agree', 'Somewhat agree'], ['Agree', 'Agree'], ['Strongly agree', 'Strongly agree']] label='I think that my partner and I are on the same wavelength with regard to our judgments of the video', widget=widgets.RadioSelectHorizontal)
     judgement1 = models.FloatField()
     certainty1 = models.FloatField()
     judgement2 = models.FloatField()
