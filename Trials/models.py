@@ -24,6 +24,11 @@ class Constants(BaseConstants):
 
     anchorslist = open('_static/anchors.txt').read()
     anchors = [x for x in anchorslist.split('\n')]
+    
+    #reference to type of stimuli
+    stimulilist = open('_static/type_stimuli.txt').read()
+    stimulitype = [x for x in stimulilist.split('\n')]
+
 
     num_rounds = len(questionsplit) #number of trials equal to number stimuli
 
@@ -96,11 +101,15 @@ class Player(BasePlayer):
         anchor1 = anchorssplit[0]
         anchor2 = anchorssplit[1]
 
+        # Get reference to stimuli time (image/video)
+        stimulitype = Constants.stimulitype[self.session.vars['stim_order'][self.round_number-1]]
+
         return dict(stim_path =stim_name,
             is_image = is_image,
             question = this_question,
             anch1=anchor1,
             anch2 = anchor2,
+            stimuli =stimulitype,        
              debug = Constants.images,
              debug2 = Constants.questionsplit,
              number_debug = self.session.vars['stim_order'])
