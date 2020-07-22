@@ -18,14 +18,15 @@ class Constants(BaseConstants):
     images.sort()
 
 
-    # find all questions, split into list
+    # Find all questions, split into list
     question = open('_static/questions_all.txt').read()
     questionsplit = [x for x in question.split('\n')]  # this generates a list of the actual questions as strings
 
+    # Get anchors
     anchorslist = open('_static/anchors.txt').read()
     anchors = [x for x in anchorslist.split('\n')]
     
-    #reference to type of stimuli
+    # Get reference to type of stimuli
     stimulilist = open('_static/type_stimuli.txt').read()
     stimulitype = [x for x in stimulilist.split('\n')]
 
