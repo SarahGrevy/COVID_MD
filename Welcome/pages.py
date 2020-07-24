@@ -17,4 +17,4 @@ class MyWaitPage_1(WaitPage):
     pass
 class MyWaitPage_2(WaitPage):
     pass
-page_sequence = [Consent, Welcome, Zoom, MyWaitPage_1, Screen_setting, Icebreaker, MyWaitPage_2]
+page_sequence = [Consent, Welcome, MyWaitPage_1, Screen_setting, Icebreaker, MyWaitPage_2]
