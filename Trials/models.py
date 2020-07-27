@@ -26,11 +26,11 @@ class Constants(BaseConstants):
     anchorslist = open('_static/anchors.txt').read()
     anchors = [x for x in anchorslist.split('\n')]
     
-    # Get reference to type of stimuli
+    # Get reference to type of stimuli on stimuli/stimuli-rewatch page 
     stimulilist = open('_static/type_stimuli.txt').read()
     stimulitype = [x for x in stimulilist.split('\n')]
 
-    #reference to type of stimuli on wavelength pape
+    #Get reference to type of stimuli on wavelength page
     image_video = open('_static/image_video.txt').read()
     image_video_type = [x for x in image_video.split('\n')]
     
