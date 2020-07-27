@@ -88,14 +88,14 @@ class P_QUESTIONS_0(Page):
 
 class P_QUESTIONS_1(Page):
     def is_displayed(self):
-        return self.round_number == 1 or self.round_number == 6
+        return self.round_number == 3 or self.round_number == 6
     form_model = 'player'
     form_fields = ['PQ_1', 'PQ_2', 'PQ_3', 'PQ_4']
 
 
 class P_QUESTIONS_2(Page):
     def is_displayed(self):
-        return self.round_number == 1 or self.round_number == 6
+        return self.round_number == 3 or self.round_number == 6
     form_model = 'player'
     form_fields = ['PQ_5', 'PQ_6', 'PQ_7', 'PQ_8', 'PQ_9', 'PQ_10']
 
