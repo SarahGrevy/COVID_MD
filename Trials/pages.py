@@ -34,6 +34,8 @@ class Discussion_1(Page):
 class Wavelength(Page):
     form_model = 'player'
     form_fields = ['PartnerAgreement']
+    def vars_for_template(self):
+            return self.player.vars_for_template()
 
 
 class Judgement_2(Page):
