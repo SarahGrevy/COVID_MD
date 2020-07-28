@@ -72,5 +72,5 @@ class Player(BasePlayer):
     cert_3 = models.StringField()
     open_1 = models.StringField()
     open_2 = models.StringField()
-    reflect = models.StringField()
+    reflect = models.LongStringField()
 
