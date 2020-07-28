@@ -35,7 +35,7 @@ class Player(BasePlayer):
                                                    ['Neither agree nor disagree', 'Neither agree nor disagree'],
                                                    ['Somewhat agree', 'Somewhat agree'], ['Agree', 'Agree']],
                                           label='I think that my partner and I are on the same wavelength with regard to our judgments of the video',
-                                          widget=widgets.RadioSelectHorizontal)
+                                          widget=widgets.RadioSelect)
     judgement1 = models.FloatField()
     certainty1 = models.FloatField()
     judgement2 = models.FloatField()
