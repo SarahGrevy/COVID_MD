@@ -14,7 +14,7 @@ class CO_CON(Page):
     
 class SRT(Page):
     form_model = 'player'
-    form_fields = ['SRT_1', 'SRT_2', 'SRT_3', 'SRT_4', 'SRT_5']
+    form_fields = ['SRT_1', 'SRT_2']
     
 class IOS(Page):
     form_model = 'player'
