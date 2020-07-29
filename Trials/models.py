@@ -37,7 +37,7 @@ class Constants(BaseConstants):
     #Includes word 'again' in the instrutions for the re-watch stimuli page
     rewatchlist = open('_statik/stimuli_rewatch.txt').read()
     rewatch = [x for x in rewatchlist.split('\n')]
-    
+  
     num_rounds = len(questionsplit) #number of trials equal to number stimuli
 
 
