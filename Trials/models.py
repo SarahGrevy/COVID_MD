@@ -34,10 +34,6 @@ class Constants(BaseConstants):
     image_video = open('_statik/image_video.txt').read()
     image_video_type = [x for x in image_video.split('\n')]
     
-    #Includes word 'again' in the instrutions for the re-watch stimuli page
-    rewatchlist = open('_statik/stimuli_rewatch.txt').read()
-    rewatch = [x for x in rewatchlist.split('\n')]
-  
     num_rounds = len(questionsplit) #number of trials equal to number stimuli
 
 
@@ -115,17 +111,13 @@ class Player(BasePlayer):
         # Get reference to stimuli on wavelength page
         image_video_type = Constants.image_video_type[self.session.vars['stim_order'][self.round_number-1]]
 
-        # get's 'again' for re-watch stimuli page
-        rewatchagain = Constants.rewatch[self.session.vars['stim_order'][self.round_number-1]]
-
         return dict(stim_path =stim_name,
             is_image = is_image,
             question = this_question,
             anch1=anchor1,
             anch2 = anchor2,
             stimuli =stimulitype,
-            image_video = image_video_type,   
-            again = rewatchagain,        
+            image_video = image_video_type,         
              debug = Constants.images,
              debug2 = Constants.questionsplit,
              number_debug = self.session.vars['stim_order'])
