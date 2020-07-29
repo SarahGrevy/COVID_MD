@@ -52,4 +52,4 @@ class open(Page):
     form_model = 'player'
     form_fields = ['open_1', 'open_2', 'reflect']
 
-page_sequence = [cert, sim, click, SRG, IOS, epist, relate, open]
+page_sequence = [cert, sim, click, SRG, IOS, SRT, epist, relate, open]
