@@ -12,7 +12,7 @@ class Constants(BaseConstants):
     players_per_group = 2
 
     # find all images and videos
-    image_path = os.path.join('_static.g/my_folder3/')
+    image_path = os.path.join('_static.g/my_folder/')
     images = os.listdir(image_path)  # this generates a list of filenames
     images = ["my_folder/" + x for x in images] # gives correct relative path to filenames
     images.sort()
