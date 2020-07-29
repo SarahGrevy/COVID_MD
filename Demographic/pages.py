@@ -18,6 +18,8 @@ class Political_Party(Page):
 class Blank_Questions(Page):
     form_model = 'player'
     form_fields = ['Compromise', 'Describe', 'Comments', 'Issues']
+class stop(Page):
+    form_model = 'player'     
 class Debrief(Page):
     form_model = 'player'    
-page_sequence = [Survey, Household_Income, Political_Orientation, Political_Party, Blank_Questions, Debrief]
+page_sequence = [Survey, Household_Income, Political_Orientation, Political_Party, Blank_Questions, stop, Debrief]
