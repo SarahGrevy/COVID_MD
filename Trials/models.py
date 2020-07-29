@@ -12,26 +12,26 @@ class Constants(BaseConstants):
     players_per_group = 2
 
     # find all images and videos
-    image_path = os.path.join('_static/my_folder3/')
+    image_path = os.path.join('_static.g/my_folder3/')
     images = os.listdir(image_path)  # this generates a list of filenames
     images = ["my_folder/" + x for x in images] # gives correct relative path to filenames
     images.sort()
 
 
     # Find all questions, split into list
-    question = open('_static/questions_all.txt').read()
+    question = open('_static.g/questions_all.txt').read()
     questionsplit = [x for x in question.split('\n')]  # this generates a list of the actual questions as strings
 
     # Get anchors
-    anchorslist = open('_static/anchors.txt').read()
+    anchorslist = open('_static.g/anchors.txt').read()
     anchors = [x for x in anchorslist.split('\n')]
     
     # Get reference to type of stimuli on stimuli/stimuli-rewatch page 
-    stimulilist = open('_static/type_stimuli.txt').read()
+    stimulilist = open('_static.g/type_stimuli.txt').read()
     stimulitype = [x for x in stimulilist.split('\n')]
 
     #Get reference to type of stimuli on wavelength page
-    image_video = open('_static/image_video.txt').read()
+    image_video = open('_static.g/image_video.txt').read()
     image_video_type = [x for x in image_video.split('\n')]
     
 
