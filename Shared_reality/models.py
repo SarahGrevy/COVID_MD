@@ -47,8 +47,6 @@ class Player(BasePlayer):
     rel_4 = models.StringField()
     rel_5 = models.StringField()
     rel_6 = models.StringField()
-    rel_7 = models.StringField()
-    rel_8 = models.StringField()
     resp_1 = models.StringField()
     resp_2 = models.StringField()
     resp_3 = models.StringField()
