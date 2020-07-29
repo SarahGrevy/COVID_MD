@@ -30,7 +30,7 @@ class click(Page):
 
 class relate(Page):
     form_model = 'player'
-    form_fields = ['rel_1', 'rel_2', 'rel_3', 'rel_4', 'rel_5', 'rel_6']
+    form_fields = ['rel_1', 'rel_2']
 
 class resp(Page):
     form_model = 'player'
@@ -52,4 +52,4 @@ class open(Page):
     form_model = 'player'
     form_fields = ['open_1', 'open_2', 'reflect']
 
-page_sequence = [cert, sim, click, SRG, CO_CON, IOS, epist, relate, resp, rap, open]
+page_sequence = [cert, sim, click, SRG, IOS, epist, relate, open]
