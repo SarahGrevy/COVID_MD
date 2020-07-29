@@ -30,7 +30,7 @@ class click(Page):
 
 class relate(Page):
     form_model = 'player'
-    form_fields = ['rel_1', 'rel_2', 'rel_3', 'rel_4', 'rel_5', 'rel_6', 'rel_7', 'rel_8']
+    form_fields = ['rel_1', 'rel_2', 'rel_3', 'rel_4', 'rel_5', 'rel_6']
 
 class resp(Page):
     form_model = 'player'
