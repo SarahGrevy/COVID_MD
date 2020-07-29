@@ -125,7 +125,7 @@ class Player(BasePlayer):
             anch2 = anchor2,
             stimuli =stimulitype,
             image_video = image_video_type,   
-            again = rewatchagain        
+            again = rewatchagain,        
              debug = Constants.images,
              debug2 = Constants.questionsplit,
              number_debug = self.session.vars['stim_order'])
