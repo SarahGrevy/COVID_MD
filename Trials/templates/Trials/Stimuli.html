@@ -5,7 +5,17 @@
 
 {% block content %}
 
+     {{stimuli}} <div>&nbsp;</div>
 
+{% if is_image == 1 %}
+   <!-- <img src="{% static stim_path %}"/> --> 
+     <img src="{% static stim_path %}" width="75%" height="75%"/>
+{% else %}
+    <video controls  width="724" height="454">
+        <source  src="{% static stim_path %}" type="video/mp4" >
+        Your browser does not support the video tag.
+    </video>
+{% endif %}
 
 
 <div>&nbsp;</div>
