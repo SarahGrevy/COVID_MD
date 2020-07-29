@@ -116,7 +116,7 @@ class Player(BasePlayer):
         image_video_type = Constants.image_video_type[self.session.vars['stim_order'][self.round_number-1]]
 
         # get's 'again' for re-watch stimuli page
-        rewatch = Constants.rewatch[self.session.vars['stim_order'][self.round_number-1]]
+        rewatchagain = Constants.rewatch[self.session.vars['stim_order'][self.round_number-1]]
 
         return dict(stim_path =stim_name,
             is_image = is_image,
@@ -125,7 +125,7 @@ class Player(BasePlayer):
             anch2 = anchor2,
             stimuli =stimulitype,
             image_video = image_video_type,   
-            again = rewatch        
+            again = rewatchagain        
              debug = Constants.images,
              debug2 = Constants.questionsplit,
              number_debug = self.session.vars['stim_order'])
