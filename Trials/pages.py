@@ -102,8 +102,8 @@ class P_QUESTIONS_2(Page):
 class MyWaitPage_5(WaitPage):
     def is_displayed(self):
         return self.round_number == 3 or self.round_number == 6
-#page_sequence = [Stimuli]
-page_sequence = [Stimuli, Judgement_1, Certainty_1, MyWaitPage_2, Discussion_1, Wavelength, Judgement_2, Certainty_2, MyWaitPage_3, Stimuli_Rewatch, Judgement_3, Certainty_3, MyWaitPage_4, P_QUESTIONS_0, P_QUESTIONS_1, IOS, P_QUESTIONS_2, MyWaitPage_5]
+page_sequence = [Stimuli]
+#page_sequence = [Stimuli, Judgement_1, Certainty_1, MyWaitPage_2, Discussion_1, Wavelength, Judgement_2, Certainty_2, MyWaitPage_3, Stimuli_Rewatch, Judgement_3, Certainty_3, MyWaitPage_4, P_QUESTIONS_0, P_QUESTIONS_1, IOS, P_QUESTIONS_2, MyWaitPage_5]
 
 
 
