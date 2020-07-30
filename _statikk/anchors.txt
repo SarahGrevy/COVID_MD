@@ -1,0 +1,10 @@
+Not at all justified,Definitely justified
+Not at all justified,Definitely justified
+Definitely not penalized, Definitely penalized
+Not at all justified,Definitely justified
+Not at all justified,Definitely justified
+Not at all justified,Definitely justified
+Not at all deserving, Completely deserving
+Completely unacceptable, Completely acceptable
+Not at all blameworthy, Completely blameworthy
+
