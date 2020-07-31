@@ -17,6 +17,15 @@
     </video>
 {% endif %}
 
+<input type="hidden" name="Stimulus_displayed" id = "id1" />
+
+
+<script>
+    let x = {{stim_path|json}}
+    document.getElementById("id1").value = x
+</script>
+
+{{ form.Stimulus_displayed.errors }}
 
 <div>&nbsp;</div>
 {% next_button %}
