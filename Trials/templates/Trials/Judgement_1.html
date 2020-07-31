@@ -2,6 +2,7 @@
 {% load otree %}
 
 {% block title %} {% endblock %}
+{{question}}
 
 {% block content %}
 
@@ -63,6 +64,15 @@ Please answer the following question <b> ALONE </b> by using the slider below. C
 
 <div>&nbsp;</div>
 </body>
+<input type="hidden" name="Question_displayed" id = "id2"  />
+
+
+<script>
+    let x = {{question|json}}
+    document.getElementById("id2").value = x
+</script>
+
+{{ form.Question_displayed.errors }}
 </html>
 <div>&nbsp;</div>
 {% next_button %}
