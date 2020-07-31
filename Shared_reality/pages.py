@@ -3,7 +3,9 @@ from otree.api import Currency as c, currency_range
 from ._builtin import Page, WaitPage
 from .models import Constants
 
-
+class intro(Page):
+    form_model = 'player'
+    
 class SRG(Page):
     form_model = 'player'
     form_fields = ['SRG_1', 'SRG_2', 'SRG_3', 'SRG_4', 'SRG_5', 'SRG_6', 'SRG_7', 'SRG_8']
@@ -52,4 +54,4 @@ class open(Page):
     form_model = 'player'
     form_fields = ['open_1', 'open_2', 'reflect']
 
-page_sequence = [cert, sim, click, SRG, IOS, SRT, epist, relate, open]
+page_sequence = [intro, cert, sim, click, SRG, IOS, SRT, epist, relate, open]
