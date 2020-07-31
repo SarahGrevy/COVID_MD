@@ -52,6 +52,6 @@ class cert(Page):
 
 class open(Page):
     form_model = 'player'
-    form_fields = ['open_1', 'open_2', 'reflect']
+    form_fields = ['open_1', 'reflect']
 
 page_sequence = [intro, cert, sim, click, SRG, IOS, SRT, epist, relate, open]
