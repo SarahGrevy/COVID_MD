@@ -23,7 +23,7 @@ class Player(BasePlayer):
     Education = models.StringField(choices=[['None', 'None'], ['Elementary School', 'Elementary School'], ['Middle School', 'Middle School'], ['Some High School', 'Some High School'], ['High School', 'High School'], ['Some College', 'Some College'], ['Associates', 'Associates'], ["Bachelor's", "Bachelor's"], ['Graduate Degree', 'Graduate Degree'], ['Doctorate ', 'Doctorate ']], label='How many years of formal education have you completed?')
     Ladder = models.IntegerField(choices=[[1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5'], [6, '6'], [7, '7'], [8, '8'], [9, '9'], [10, '10']], label='   ')
     PoliticalParty = models.FloatField()
-    PoliticalOrientation = models.FloatField()
+    PoliticalOrientation = models.StringField(choices=[['A Democrat', 'A Democrat'], ['A Republican', 'A Republican'], ['An Independent', 'An Independent'], ['Other', 'Other'], ['None', 'None']], label='Politically speaking, do you consider yourself:', widget=widgets.RadioSelect)
     Age = models.IntegerField(label='Please enter your age')
     Compromise = models.LongStringField(blank=True, label='What do you consider a compromise?')
     Describe = models.LongStringField(blank=True, label='As briefly as possible, please describe what you think this study was about:')
