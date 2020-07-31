@@ -6,12 +6,14 @@ import random, os
 
 class Stimuli(Page):
     form_model = 'player'
+    form_fields = ['Stimulus_displayed']
     def vars_for_template(self):
             return self.player.vars_for_template()
 
 class Judgement_1(Page):
     form_model = 'player'
     form_fields = ['judgement1']
+    form_fields = ['Question_displayed']
     def vars_for_template(self):
             return self.player.vars_for_template()
 
