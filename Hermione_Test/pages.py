@@ -17,6 +17,8 @@ class MyWaitPage_1(WaitPage):
 class Discussion_1(Page):
     form_model = 'player'
     live_method = "live_slider"
+    form_fields = ['mutual_judgment']
+    
 class Wavelength(Page):
     form_model = 'player'
     form_fields = ['PartnerAgreement']
