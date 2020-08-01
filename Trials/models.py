@@ -59,8 +59,6 @@ class Group(BaseGroup):
 
 
 class Player(BasePlayer):
-    Name = models.StringField(label='What is your name?')
-    Age = models.IntegerField(label='What is your age?')
     Stimulus_displayed = models.StringField()
     Question_displayed = models.StringField()
     PartnerAgreement = models.StringField(choices=[['Strongly disagree', 'Strongly disagree'], ['Disagree', 'Disagree'], ['Somewhat disagree', 'Somewhat disagree'], ['Neither agree nor disagree', 'Neither agree nor disagree'], ['Somewhat agree', 'Somewhat agree'], ['Agree', 'Agree'], ['Strongly agree', 'Strongly agree']], label='', widget=widgets.RadioSelect)
