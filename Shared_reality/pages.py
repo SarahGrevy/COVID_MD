@@ -34,10 +34,6 @@ class sim(Page):
     form_model = 'player'
     form_fields = ['sim_1', 'sim_2', 'sim_3', 'sim_4', 'sim_5']
 
-class rap(Page):
-    form_model = 'player'
-    form_fields = ['rap_1', 'rap_2', 'rap_3', 'rap_4', 'rap_5', 'rap_6', 'rap_7', 'rap_8', 'rap_9', 'rap_10']
-
 class cert(Page):
     form_model = 'player'
     form_fields = ['cert_1', 'cert_2', 'cert_3']
