@@ -12,8 +12,8 @@ class Stimuli(Page):
 
 class Judgement_1(Page):
     form_model = 'player'
-    form_fields = ['judgement1']
-    form_fields = ['Question_displayed']
+    form_fields = ['judgement1','Question_displayed']
+    #form_fields = ['Question_displayed']
     def vars_for_template(self):
             return self.player.vars_for_template()
 
@@ -28,6 +28,7 @@ class MyWaitPage_2(WaitPage):
 class Discussion_1(Page):
     form_model = 'player'
     live_method = "live_slider"
+    form_fields = ['mutual_judgment']
     def vars_for_template(self):
             return self.player.vars_for_template()
 
