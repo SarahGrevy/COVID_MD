@@ -26,6 +26,5 @@ class Player(BasePlayer):
     PoliticalOrientation = models.StringField(choices=[['A Democrat', 'A Democrat'], ['A Republican', 'A Republican'], ['An Independent', 'An Independent'], ['Other', 'Other'], ['None', 'None']], label='Politically speaking, do you consider yourself:', widget=widgets.RadioSelect)
     Age = models.IntegerField(label='Please enter your age')
     Compromise = models.LongStringField(blank=True, label='What do you consider a compromise?')
-    Describe = models.LongStringField(blank=True, label='As briefly as possible, please describe what you think this study was about:')
     Comments = models.LongStringField(blank=True, label='Please feel free to make any additional comments about the study: ')
     Issues = models.LongStringField(blank=True, label='Did you experience any technical issues during the experiment? If so, please explain what these issues were')
