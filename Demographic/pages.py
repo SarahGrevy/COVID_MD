@@ -17,7 +17,7 @@ class Political_Party(Page):
     form_fields = ['PoliticalParty']
 class Blank_Questions(Page):
     form_model = 'player'
-    form_fields = ['Compromise', 'Describe', 'Comments', 'Issues']
+    form_fields = ['Compromise', 'Comments', 'Issues']
 class stop(Page):
     form_model = 'player'     
 class Debrief(Page):
