@@ -5,8 +5,6 @@ from .models import Constants
 
 class Consent(Page):
     form_model = 'player'
-class Welcome(Page):
-    form_model = 'player'
 class Zoom(Page):
     form_model = 'player'
 class Screen_setting(Page):
