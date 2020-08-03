@@ -34,7 +34,7 @@ class Player(BasePlayer):
                                                    ['Somewhat disagree', 'Somewhat disagree'],
                                                    ['Neither agree nor disagree', 'Neither agree nor disagree'],
                                                    ['Somewhat agree', 'Somewhat agree'], ['Agree', 'Agree'], ['Strongly agree', 'Strongly agree']],
-                                          label=' ',
+                                          label='',
                                           widget=widgets.RadioSelect)
     judgement1 = models.FloatField()
     certainty1 = models.FloatField()
