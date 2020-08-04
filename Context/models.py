@@ -22,6 +22,7 @@ class Player(BasePlayer):
                                                    ['Prefer not to answer', 'Prefer not to answer']],
                                      label='Have you or someone in your housefold either lost a job or taken a paycut because of the coronavirus outbreak?')
     news_source = models.StringField(blank=True, label='What is your most trusted news source?')
+    goverment = models.FloatField()
     post_global_1 = models.FloatField()
     post_global_2 = models.FloatField()
     post_global_3 = models.FloatField()
