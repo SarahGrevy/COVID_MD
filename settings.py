@@ -1,7 +1,7 @@
 from os import environ
 SESSION_CONFIG_DEFAULTS = dict(real_world_currency_per_point=1, participation_fee=0)
 #SESSION_CONFIGS = [dict(name='Random_Order_1', num_demo_participants=2, app_sequence=['Shared_reality', 'Demographic'], my_key=5, my_key2=0)]
-SESSION_CONFIGS = [dict(name='Random_Order_1', num_demo_participants=2, app_sequence=['Welcome', 'Hermione_Test', 'Trials', 'Shared_reality', 'Demographic'], my_key=5, my_key2=0)]
+SESSION_CONFIGS = [dict(name='Random_Order_1', num_demo_participants=2, app_sequence=['Context','Welcome', 'Hermione_Test', 'Trials', 'Shared_reality', 'Demographic'], my_key=5, my_key2=0)]
 LANGUAGE_CODE = 'en'
 REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = True
