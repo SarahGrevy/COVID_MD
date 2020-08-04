@@ -6,6 +6,9 @@ from .models import Constants
 class Specific(Page):
     form_model = 'player'
     form_fields = ['state','covid','pay_cut','news_source']
+class Specific_2(Page):
+    form_model = 'player'
+    form_fields = ['goverment']    
 class Global_1(Page):
     form_model = 'player'
     form_fields = ['post_global_1']
