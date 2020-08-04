@@ -6,7 +6,7 @@ from otree.api import (
 
 doc = ''
 class Constants(BaseConstants):
-    name_in_url = 'Welcome'
+    name_in_url = 'Context'
     players_per_group = 2
     num_rounds = 1
 class Subsession(BaseSubsession):
