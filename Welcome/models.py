@@ -14,5 +14,6 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     pass
 class Player(BasePlayer):
-    Name = models.StringField(label='What is your name?')
-    Age = models.IntegerField(label='How old are you? ')
+    pre_global_1 = models.FloatField()
+    pre_global_2 = models.FloatField()
+    pre_global_3 = models.FloatField()
