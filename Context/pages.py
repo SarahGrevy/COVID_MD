@@ -8,7 +8,7 @@ class Specific(Page):
     form_fields = ['state','covid','pay_cut','news_source']
 class Specific_2(Page):
     form_model = 'player'
-    form_fields = ['goverment']    
+    form_fields = ['post_goverment']    
 class Global_1(Page):
     form_model = 'player'
     form_fields = ['post_global_1']
