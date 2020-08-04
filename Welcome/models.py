@@ -17,3 +17,5 @@ class Player(BasePlayer):
     pre_global_1 = models.FloatField()
     pre_global_2 = models.FloatField()
     pre_global_3 = models.FloatField()
+    goverment = models.FloatField()
+
