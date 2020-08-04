@@ -13,7 +13,10 @@ class Global_2(Page):
     form_fields = ['pre_global_2']
 class Global_3(Page):
     form_model = 'player'
-    form_fields = ['pre_global_3']    
+    form_fields = ['pre_global_3']
+class Specific_2(Page):
+    form_model = 'player'
+    form_fields = ['goverment']    
 class Zoom(Page):
     form_model = 'player'
 class Screen_setting(Page):
@@ -26,4 +29,4 @@ class MyWaitPage_2(WaitPage):
     pass
 class MyWaitPage_3(WaitPage):
     pass
-page_sequence = [Consent, MyWaitPage_1, Global_1, Global_2, Global_3, MyWaitPage_2, Screen_setting, Icebreaker, MyWaitPage_2]
+page_sequence = [Consent, MyWaitPage_1, Global_1, Global_2, Global_3, Specific_2, MyWaitPage_2, Screen_setting, Icebreaker, MyWaitPage_2]
