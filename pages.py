@@ -19,6 +19,9 @@ class Judgement_1(Page):
 class Certainty_1(Page):
     form_model = 'player'
     form_fields = ['certainty1']
+    
+    
+#add moralization question_1
 
 class MyWaitPage_2(WaitPage):
 
@@ -47,6 +50,8 @@ class Certainty_2(Page):
     form_model = 'player'
     form_fields = ['certainty2']
 
+#add moralization question_2
+    
 class MyWaitPage_3(WaitPage):
     pass
 
@@ -64,6 +69,10 @@ class Judgement_3(Page):
 class Certainty_3(Page):
     form_model = 'player'
     form_fields = ['certainty3']
+
+    
+#add moralization question_3
+
 
 class MyWaitPage_4(WaitPage):
     pass
